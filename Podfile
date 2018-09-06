@@ -7,4 +7,5 @@ target 'ModuleAProject' do
 
   # Pods for ModuleAProject
 pod 'RJBModuleBase', '~> 0.0.3'
+ pod 'CTMediator', '~> 25'
 end
