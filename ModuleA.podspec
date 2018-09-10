@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "ModuleA"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ModuleA."
+  s.summary      = "this is A moduleA,you can invert it"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = '这是ModuleA'
+  s.description  = '这是ModuleA,你可以找到这个打模块的入口函数,就可以通过ctmedia去调用了'
 
   s.homepage     = "https://github.com/raojunbo/ModuleAProject"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ModuleAProject/Target_Module/*.{h,m}"
+  s.source_files  = "ModuleAProject/Classes"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -128,9 +128,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "RJBModuleBase", "~> 0.0.3"
 
 end
