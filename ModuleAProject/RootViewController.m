@@ -7,9 +7,10 @@
 //
 
 #import "RootViewController.h"
+#import "CTMediator.h"
 
 @interface RootViewController ()
-
+@property (nonatomic, strong)UIButton *button;
 @end
 
 @implementation RootViewController
@@ -18,12 +19,31 @@
     [super viewDidLoad];
     self.view.backgroundColor  = [UIColor whiteColor];
     self.title = @"A模块";
-    // Do any additional setup after loading the view.
+    
+    self.button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.button setTitle:@"调到A" forState:UIControlStateNormal];
+    self.button.frame = CGRectMake(0, 100, 100, 50);
+    [self.button addTarget:self action:@selector(clickA) forControlEvents:UIControlEventTouchUpInside];
+    self.button.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:self.button];
+    
+    //整个这里相当与一个测试文件了。
+    //对外有用的代码就在classes面
+    
+}
+
+- (void)clickA {
+    UIViewController*vc =  [[CTMediator sharedInstance] performTarget:@"ModuleAProject_A" action:@"moduleAProject_AViewController" params:nil shouldCacheTarget:NO];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)clickB {
+    UIViewController*vc =  [[CTMediator sharedInstance] performTarget:@"ModuleAProject_B" action:@"moduleAProject_BViewController" params:nil shouldCacheTarget:NO];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

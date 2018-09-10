@@ -12,6 +12,10 @@
 		3460E7C52141515A00D6DFBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E7C02141515A00D6DFBE /* AppDelegate.m */; };
 		3460E7C62141515A00D6DFBE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3460E7C22141515A00D6DFBE /* Info.plist */; };
 		3460E7C72141515A00D6DFBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E7C32141515A00D6DFBE /* main.m */; };
+		3460E80A2146226300D6DFBE /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E8022146226300D6DFBE /* AViewController.m */; };
+		3460E80B2146226300D6DFBE /* Target_ModuleAProject_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E8062146226300D6DFBE /* Target_ModuleAProject_B.m */; };
+		3460E80C2146226300D6DFBE /* Target_ModuleAProject_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E8072146226300D6DFBE /* Target_ModuleAProject_A.m */; };
+		3460E80D2146226300D6DFBE /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460E8082146226300D6DFBE /* BViewController.m */; };
 		9388B738D7BFC77AE6CC4764 /* libPods-ModuleAProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDE2C59A649F92CF25C0367 /* libPods-ModuleAProject.a */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,14 @@
 		3460E7C12141515A00D6DFBE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3460E7C22141515A00D6DFBE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3460E7C32141515A00D6DFBE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3460E8012146226300D6DFBE /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		3460E8022146226300D6DFBE /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		3460E8042146226300D6DFBE /* Target_ModuleAProject_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_ModuleAProject_B.h; sourceTree = "<group>"; };
+		3460E8052146226300D6DFBE /* Target_ModuleAProject_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_ModuleAProject_A.h; sourceTree = "<group>"; };
+		3460E8062146226300D6DFBE /* Target_ModuleAProject_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleAProject_B.m; sourceTree = "<group>"; };
+		3460E8072146226300D6DFBE /* Target_ModuleAProject_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleAProject_A.m; sourceTree = "<group>"; };
+		3460E8082146226300D6DFBE /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		3460E8092146226300D6DFBE /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		34C05BD9214149CD0013872D /* ModuleAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDE2C59A649F92CF25C0367 /* libPods-ModuleAProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModuleAProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75F1F131F22F10BE44E290C /* Pods-ModuleAProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAProject/Pods-ModuleAProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +53,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3460E8002146226300D6DFBE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3460E8032146226300D6DFBE /* Target_Module */,
+				3460E8012146226300D6DFBE /* BViewController.h */,
+				3460E8022146226300D6DFBE /* AViewController.m */,
+				3460E8082146226300D6DFBE /* BViewController.m */,
+				3460E8092146226300D6DFBE /* AViewController.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3460E8032146226300D6DFBE /* Target_Module */ = {
+			isa = PBXGroup;
+			children = (
+				3460E8042146226300D6DFBE /* Target_ModuleAProject_B.h */,
+				3460E8052146226300D6DFBE /* Target_ModuleAProject_A.h */,
+				3460E8062146226300D6DFBE /* Target_ModuleAProject_B.m */,
+				3460E8072146226300D6DFBE /* Target_ModuleAProject_A.m */,
+			);
+			path = Target_Module;
+			sourceTree = "<group>";
+		};
 		34C05BD0214149CD0013872D = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +97,11 @@
 		34C05BDB214149CD0013872D /* ModuleAProject */ = {
 			isa = PBXGroup;
 			children = (
+				3460E8002146226300D6DFBE /* Classes */,
 				3460E7BC2141512500D6DFBE /* RootViewController.h */,
 				3460E7BD2141512500D6DFBE /* RootViewController.m */,
-				3460E7C12141515A00D6DFBE /* AppDelegate.h */,
 				3460E7C02141515A00D6DFBE /* AppDelegate.m */,
+				3460E7C12141515A00D6DFBE /* AppDelegate.h */,
 				3460E7BF2141515A00D6DFBE /* Assets.xcassets */,
 				3460E7C22141515A00D6DFBE /* Info.plist */,
 				3460E7C32141515A00D6DFBE /* main.m */,
@@ -213,8 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3460E80D2146226300D6DFBE /* BViewController.m in Sources */,
+				3460E80A2146226300D6DFBE /* AViewController.m in Sources */,
 				3460E7C52141515A00D6DFBE /* AppDelegate.m in Sources */,
+				3460E80B2146226300D6DFBE /* Target_ModuleAProject_B.m in Sources */,
 				3460E7C72141515A00D6DFBE /* main.m in Sources */,
+				3460E80C2146226300D6DFBE /* Target_ModuleAProject_A.m in Sources */,
 				3460E7BE2141512500D6DFBE /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
